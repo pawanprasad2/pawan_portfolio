@@ -19,13 +19,23 @@ export default function Homepage() {
     "Problem Solver",
   ];
 
+  const handleDownloadCV = () => {
+    // Add CV download functionality here
+    console.log("Downloading CV...");
+  };
+
+  const handleScrollDown = () => {
+    const skillsSection = document.getElementById("skills");
+    skillsSection?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <section
         id="home"
         className="relative flex justify-center items-center w-full min-h-screen bg-[#0f1217] overflow-hidden"
       >
-        {/* Portrait for mobile (background effect) */}
+        {/* Mobile Portrait Background */}
         <div
           aria-hidden="true"
           className="absolute inset-0 w-full h-full opacity-30 block md:hidden z-0"
@@ -39,7 +49,7 @@ export default function Homepage() {
           />
         </div>
 
-        {/* Portrait for desktop (right side) */}
+        {/* Desktop Portrait */}
         <div
           aria-hidden="true"
           className="
@@ -63,62 +73,74 @@ export default function Homepage() {
           </div>
         </div>
 
-        {/* Right-side cards (desktop only) */}
+        {/* Desktop Side Cards */}
         <aside
           className="
-            absolute top-[18%]  md:top-[25%] lg:top-[22%]
+            absolute top-[18%] md:top-[25%] lg:top-[22%]
             right-4 sm:right-8 md:right-14 lg:right-18 xl:right-34
             hidden md:flex flex-col gap-5 w-[260px] lg:w-[280px]
             z-30
           "
         >
-          <div className="rounded-lg bg-[#131722]/90 text-white p-5 shadow-xl">
-            <h3 className="text-sm font-semibold">ABOUT ME</h3>
-            <p className="mt-2 text-xs text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit leo qui id
-              elementum convallis lacus gravida.
+          <div className="rounded-lg bg-[#131722]/90 backdrop-blur-sm text-white p-5 shadow-xl border border-gray-800/50 hover:bg-[#1a1f2e]/90 transition-all duration-300">
+            <h3 className="text-sm font-semibold text-blue-300">ABOUT ME</h3>
+            <p className="mt-2 text-xs text-gray-300 leading-relaxed">
+              Passionate full-stack developer with expertise in modern web technologies. 
+              I create innovative solutions that bridge the gap between design and functionality.
             </p>
-            <button className="mt-4 text-xs font-semibold text-blue-300 hover:underline">
-              LEARN MORE →
+            <button 
+              className="mt-4 text-xs font-semibold text-blue-300 hover:text-blue-200 transition-colors duration-200 group"
+              onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              LEARN MORE <span className="group-hover:translate-x-1 inline-block transition-transform duration-200">→</span>
             </button>
           </div>
 
-          <div className="rounded-lg bg-[#131722]/90 text-white p-5 shadow-xl">
-            <h3 className="text-sm font-semibold">Projects</h3>
-            <p className="mt-2 text-xs text-gray-300">
-              Purus ut faucibus pulvinar elementum integer enim neque volutpat
-              eu non diam phasellus.
+          <div className="rounded-lg bg-[#131722]/90 backdrop-blur-sm text-white p-5 shadow-xl border border-gray-800/50 hover:bg-[#1a1f2e]/90 transition-all duration-300">
+            <h3 className="text-sm font-semibold text-blue-300">PROJECTS</h3>
+            <p className="mt-2 text-xs text-gray-300 leading-relaxed">
+              Explore my portfolio of web applications, featuring responsive designs, 
+              efficient backends, and seamless user experiences.
             </p>
-            <button className="mt-4 text-xs font-semibold text-blue-300 hover:underline">
-              BROWSE PORTFOLIO →
+            <button 
+              className="mt-4 text-xs font-semibold text-blue-300 hover:text-blue-200 transition-colors duration-200 group"
+              onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              BROWSE PORTFOLIO <span className="group-hover:translate-x-1 inline-block transition-transform duration-200">→</span>
             </button>
           </div>
 
           <div className="btn-1">
-            <button className="p-3 bg-blue-500 flex text-sm text-white font-bold rounded-2xl">
-              <HiOutlineDownload className="mr-2" size="24" /> Download CV
+            <button 
+              onClick={handleDownloadCV}
+              className="p-3 bg-blue-500 hover:bg-blue-600 flex items-center text-sm text-white font-bold rounded-2xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
+            >
+              <HiOutlineDownload className="mr-2" size="20" /> 
+              Download CV
             </button>
           </div>
         </aside>
 
-        {/* Hero text */}
+        {/* Hero Content */}
         <div
           className="
             relative mt-10 
             z-40 max-w-2xl px-6 py-12 md:px-10 lg:px-12
             text-center md:text-left
-            md:mr-55  md:mt-20   lg:mr-95 lg:mt-15 xl:mr-140
+            md:mr-55 md:mt-20 lg:mr-95 lg:mt-15 xl:mr-140
           "
         >
-          <span className="text-4xl sm:text-5xl md:text-5xl font-bold text-white">
+          <span className="text-4xl sm:text-5xl md:text-5xl font-bold text-white animate-fade-in">
             Hi{" "}
           </span>
-          <div className="mt-6 h-1 w-[80px] border border-yellow-500 sm:w-[19%] mx-auto md:mx-0 bg-white md:w-[80px]" />
+          
+          <div className="mt-6 h-1 w-[80px] border border-yellow-500 sm:w-[19%] mx-auto md:mx-0 bg-gradient-to-r from-yellow-500 to-yellow-400 md:w-[80px] rounded-full" />
+          
           <div className="mt-8 mb-3 flex flex-wrap justify-center md:justify-start items-end">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white">
               I'm
             </h1>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-blue-400 ml-2">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-blue-400 ml-2 bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">
               Pawan
             </h1>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white ml-2">
@@ -131,32 +153,40 @@ export default function Homepage() {
             words={words}
           />
 
-          <p className="mt-6 text-gray-400  font-semibold text-sm sm:text-base md:w-[90%] lg:w-[45vw]  md:text-l lg:text-xl">
+          <p className="mt-6 text-gray-400 font-semibold text-sm sm:text-base md:w-[90%] lg:w-[45vw] md:text-lg lg:text-xl leading-relaxed">
             Building beautiful, scalable, and user-friendly web applications
             with responsive front-end designs and efficient back-end systems.
             Passionate about creating digital experiences that make a
             difference.
           </p>
 
-          <div className="mt-8 mx-auto md:mx-0 rounded-full bg-[#0b39ef] p-4 w-[56px] flex justify-center items-center">
-            <SlArrowDown className="text-white text-xl" />
-          </div>
+          <button 
+            onClick={handleScrollDown}
+            className="mt-8 mx-auto md:mx-0 rounded-full bg-[#0b39ef] hover:bg-[#0929d1] p-4 w-[56px] h-[56px] flex justify-center items-center transition-all duration-300 hover:shadow-lg hover:scale-110 active:scale-95 cursor-pointer"
+            aria-label="Scroll to next section"
+          >
+            <SlArrowDown className="text-white text-xl animate-bounce" />
+          </button>
         </div>
       </section>
 
-      {/* other section */}
+      {/* Navigation Sections */}
       <section id="skills">
         <Skillspage />
       </section>
+      
       <section id="projects">
         <Projectpage />
       </section>
+      
       <section id="about">
         <Aboutpage />
       </section>
+      
       <section id="contact">
         <Contactpage />
       </section>
+      
       <section id="footer">
         <Footer />
       </section>

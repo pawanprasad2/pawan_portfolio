@@ -33,7 +33,7 @@ export default function Homepage() {
     <>
       <section
         id="home"
-        className="relative flex justify-center items-center w-full min-h-screen bg-[#0f1217] overflow-hidden"
+        className="relative  flex justify-center items-center w-full min-h-screen bg-[#1b1f24] overflow-hidden"
       >
         {/* Mobile Portrait Background */}
         <div
@@ -55,10 +55,10 @@ export default function Homepage() {
           className="
             absolute inset-y-0 right-4 sm:right-6
             hidden md:flex items-center
-            md:w-[45vw] lg:w-[40vw] md:h-[85vh] lg:h-[80vh]
+            md:w-[53vw] lg:w-[42vw] md:h-[90vh] lg:h-[80vh]
             z-10
             pointer-events-none 
-            mr-0 md:mr-60 lg:mr-65 xl:mr-100
+            mr-0 md:mr-5 lg:mr-65 xl:mr-100
             mt-0 md:mt-22 lg:mt-36
           "
         >
@@ -76,13 +76,13 @@ export default function Homepage() {
         {/* Desktop Side Cards */}
         <aside
           className="
-            absolute top-[18%] md:top-[25%] lg:top-[22%]
-            right-4 sm:right-8 md:right-14 lg:right-18 xl:right-34
-            hidden md:flex flex-col gap-5 w-[260px] lg:w-[280px]
+            absolute top-[18%] lg:top-[21%]
+            right-4 sm:right-8 md:right-4 lg:right-10 xl:right-10
+            hidden  flex-col gap-5 w-[260px] lg:px-2 lg:flex lg:w-[27%]
             z-30
           "
         >
-          <div className="rounded-lg bg-[#131722]/90 backdrop-blur-sm text-white p-5 shadow-xl border border-gray-800/50 hover:bg-[#1a1f2e]/90 transition-all duration-300">
+          <div className="rounded-lg  bg-[#131722]/90 backdrop-blur-sm text-white p-5 shadow-xl border border-gray-800/50 hover:bg-[#1a1f2e]/90 transition-all duration-300">
             <h3 className="text-sm font-semibold text-blue-300">ABOUT ME</h3>
             <p className="mt-2 text-xs text-gray-300 leading-relaxed">
               Passionate full-stack developer with expertise in modern web technologies. 
@@ -113,9 +113,9 @@ export default function Homepage() {
           <div className="btn-1">
             <button 
               onClick={handleDownloadCV}
-              className="p-3 bg-blue-500 hover:bg-blue-600 flex items-center text-sm text-white font-bold rounded-2xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
+              className="p-3 bg-blue-500 md:p-2 hover:bg-blue-600 flex items-center text-sm text-white font-bold rounded-2xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
             >
-              <HiOutlineDownload className="mr-2" size="20" /> 
+              <HiOutlineDownload className="mr-2 " size="20" /> 
               Download CV
             </button>
           </div>
@@ -125,35 +125,35 @@ export default function Homepage() {
         <div
           className="
             relative mt-10 
-            z-40 max-w-2xl px-6 py-12 md:px-10 lg:px-12
+            z-40 max-w-2xl px-6 py-12 md:px-7 lg:px-12
             text-center md:text-left
-            md:mr-55 md:mt-20 lg:mr-95 lg:mt-15 xl:mr-140
+            md:mr-50 md:mt-18 lg:mr-135 lg:mt-15 xl:mr-170 
           "
         >
-          <span className="text-4xl sm:text-5xl md:text-5xl font-bold text-white animate-fade-in">
+          <span className="text-4xl sm:text-5xl xl:mr-2 xl:ml-2 lg:ml-2 md:ml-2 md:text-5xl font-bold  text-white animate-fade-in">
             Hi{" "}
           </span>
           
-          <div className="mt-6 h-1 w-[80px] border border-yellow-500 sm:w-[19%] mx-auto md:mx-0 bg-gradient-to-r from-yellow-500 to-yellow-400 md:w-[80px] rounded-full" />
+          <div className="mt-6 xl:ml-3 lg:ml-3 md:ml-3 h-1 w-[80px] border border-yellow-500 sm:w-[19%] mx-auto md:mx-0 bg-gradient-to-r from-yellow-500 to-yellow-400 md:w-[80px] rounded-full" />
           
-          <div className="mt-8 mb-3 flex flex-wrap justify-center md:justify-start items-end">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white">
+          <div className="mt-8 mb-3  flex flex-wrap justify-center md:justify-start items-end">
+            <h1 className="text-4xl xl:ml-2 lg:ml-2 md:ml-2 sm:text-5xl md:text-5xl lg:text-6xl font-bold text-white">
               I'm
             </h1>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-blue-400 ml-2 bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">
+            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold text-blue-400 ml-2 bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text ">
               Pawan
             </h1>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white ml-2">
+            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold text-white ml-2">
               , a
             </h1>
           </div>
 
           <FlipWords
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold dark:text-blue-400"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  lg:w-[110%] font-bold dark:text-blue-400"
             words={words}
           />
 
-          <p className="mt-6 text-gray-400 font-semibold text-sm sm:text-base md:w-[90%] lg:w-[45vw] md:text-lg lg:text-xl leading-relaxed">
+          <p className="mt-6 xl:ml-2 lg:ml-2 md:ml-2 text-gray-400 font-semibold text-sm sm:text-base md:w-[75%] lg:w-[45vw] md:text-[12px] lg:text-[14px] leading-relaxed">
             Building beautiful, scalable, and user-friendly web applications
             with responsive front-end designs and efficient back-end systems.
             Passionate about creating digital experiences that make a
@@ -162,7 +162,7 @@ export default function Homepage() {
 
           <button 
             onClick={handleScrollDown}
-            className="mt-8 mx-auto md:mx-0 rounded-full bg-[#0b39ef] hover:bg-[#0929d1] p-4 w-[56px] h-[56px] flex justify-center items-center transition-all duration-300 hover:shadow-lg hover:scale-110 active:scale-95 cursor-pointer"
+            className="mt-8 mx-auto md:mx-0 rounded-full bg-[#0b39ef] hover:bg-[#0929d1] p-4 w-[56px] h-[56px] flex justify-center items-center xl:ml-2 lg:ml-2 md:ml-2 transition-all duration-300 hover:shadow-lg hover:scale-110 active:scale-95 cursor-pointer"
             aria-label="Scroll to next section"
           >
             <SlArrowDown className="text-white text-xl animate-bounce" />

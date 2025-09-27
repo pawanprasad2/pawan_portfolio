@@ -26,7 +26,7 @@ function Contactpage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#1b1f24] text-white">
+    <div className="min-h-screen bg-[#1b1f24] border-t border-gray-700 text-white">
       
       <div className="max-w-6xl mx-auto px-6 py-20">
         
@@ -170,21 +170,6 @@ function Contactpage() {
           </div>
         </div>
 
-        {/* Additional Info */}
-        <div className="mt-20 text-center">
-          <div className="bg-gray-800/30 rounded-xl p-8 border border-gray-700/50">
-            <h3 className="text-2xl font-bold mb-4">Quick Response</h3>
-            <p className="text-gray-300 mb-4">
-              I typically respond to messages within 24 hours. For urgent matters, 
-              feel free to reach out via phone or connect with me on social media.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-400">
-              <span>• Available for freelance projects</span>
-              <span>• Open to full-time opportunities</span>
-              <span>• Remote work friendly</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

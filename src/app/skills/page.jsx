@@ -40,12 +40,15 @@ function Skillspage() {
 
   return (
     <div className="min-h-screen p-10 border-t border-gray-700 bg-[#1b1f24] text-white">
-      <div className="max-w-7xl mt-19 mx-auto px-6 py-16">
+      <div className="max-w-7xl  mx-auto px-6 py-16">
         {/* Header */}
         <div className="mb-20">
           <h1 className="text-8xl md:text-9xl font-black text-white mb-4 tracking-tight">
             SKILLS
           </h1>
+          <p className="text-gray-400 max-w-2xl ">
+            A comprehensive overview of my technical proficiencies
+          </p>
         </div>
 
         {/* Skills Layout */}

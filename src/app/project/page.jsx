@@ -7,36 +7,34 @@ function Projectpage() {
   const projects = [
     {
       id: 1,
-      title: "TaskFlow",
+      title: "Chatty",
       description:
-        "A comprehensive project management solution with real-time collaboration, timeline tracking, and team analytics.",
-      stack: ["React", "Node.js", "MongoDB", "Socket.io"],
+        "Chatty is a modern messaging app for real-time one-on-one conversations. Share text, images, and media instantly with a clean, lightweight, and secure experience.",
+      stack: ["React","Tailwind css","Redux","DaisyUI", "Node.js","Express.js", "MongoDB", "Socket.io"],
       liveLink: "https://taskflow-demo.vercel.app",
-      githubLink: "https://github.com/yourusername/taskflow",
-      thumbnail:
-        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&auto=format",
+      githubLink: "https://github.com/pawanprasad2/chat-app-mern-stack-",
+      src:"./image/chatty.png"
     },
     {
       id: 2,
-      title: "WeatherLens",
+      title: "File Uploader",
       description:
-        "Advanced weather forecasting with AI-powered predictions and interactive climate data visualization.",
-      stack: ["Next.js", "TypeScript", "D3.js", "OpenAI"],
+        "A simple and secure file uploader app to upload, delete, and download your files with ease. Clean design, fast performance, and complete control over your data.",
+      stack: ["Nodejs", "EJS", "Express.js", "MongoDb","AWS","jwt"],
       liveLink: "https://weatherlens.app",
-      githubLink: "https://github.com/yourusername/weatherlens",
-      thumbnail:
-        "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop&auto=format",
+      githubLink: "https://github.com/pawanprasad2/secure-file-uploader",
+      src:"./image/fileUploader.png"
     },
     {
       id: 3,
-      title: "CodeShare",
+      title: "Cynthia Ugwu - A Portfolio",
       description:
-        "Real-time code sharing platform with syntax highlighting, live cursors, and version control integration.",
-      stack: ["Vue.js", "Express", "Redis", "WebRTC"],
+        "A sleek, minimal, and modern portfolio website inspired by Cynthia Ugwu’s design style. Built with smooth animations, responsive layouts, and an interactive user experience to showcase creative work beautifully..",
+      stack: ["HTML", "Javascript", "CSS", "GSAP"],
       liveLink: "https://codeshare-live.com",
-      githubLink: "https://github.com/yourusername/codeshare",
-      thumbnail:
-        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop&auto=format",
+      githubLink: "https://github.com/pawanprasad2/Cynthia-Ugwu---website",
+      src:"./image/cynthiaugwu.png"
+      
     },
   ];
 
@@ -74,7 +72,7 @@ function Projectpage() {
                 }`}
               >
                 <img
-                  src={project.thumbnail}
+                  src={project.src}
                   alt={project.title}
                   className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                 />

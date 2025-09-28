@@ -6,12 +6,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        futura: ['Futura', 'sans-serif'],
-        gilroy: ['Gilroy', 'sans-serif'],
-      },
        fontFamily: {
-        sans: ["var(--font-poppins)", "sans-serif"], // now `font-sans` = Poppins
+        sans: ["Roboto", "Helvetica", "sans-serif"],
       },
     },
   },

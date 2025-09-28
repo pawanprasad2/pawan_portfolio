@@ -1,13 +1,13 @@
+// src/app/layout.js
 import "@/styles/globals.css";
 import Navbar from "@/components/navbar";
-import { Poppins } from "next/font/google";
+import { Roboto } from "next/font/google";
 
-const poppins = Poppins({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-poppins",   // create CSS variable
+  weight: ["400", "500", "700"], 
+  display: "swap",
 });
-
 
 export const metadata = {
   title: "pawan-portfolio",
@@ -15,8 +15,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html  lang="en">
-      <body  className={`${poppins.variable} font-sans`} >
+    <html lang="en">
+      {/* roboto.className will inject font into body */}
+      <body className={roboto.className}>
         <Navbar />
         {children}
       </body>

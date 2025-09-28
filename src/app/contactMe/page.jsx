@@ -31,19 +31,14 @@ function Contactpage() {
       <div className="max-w-6xl mx-auto px-6 py-20">
         
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-6">Get In Touch</h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Have a project in mind or want to discuss opportunities? 
-            I'd love to hear from you. Let's create something amazing together.
-          </p>
-        </div>
+   
 
         <div className="grid lg:grid-cols-2 gap-16">
           
           {/* Contact Info */}
           <div>
-            <h2 className="text-3xl font-bold mb-8">Let's Connect</h2>
+            <h2 className="text-3xl font-bold mb-2">Let's Connect</h2>
+             <div className=" h-1 w-[50%] border mb-8 border-yellow-500 sm:w-[19%] md:mx-0 bg-gradient-to-r from-yellow-500 to-yellow-400 md:w-[25%] rounded-full" />
             
             <div className="space-y-8 mb-12">
               <div className="flex items-start space-x-4">
@@ -52,7 +47,7 @@ function Contactpage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-1">Email</h3>
-                  <p className="text-gray-300">pawan.prasad@example.com</p>
+                  <p className="text-gray-300">pawanprasad2322@gmail.com</p>
                   <p className="text-sm text-gray-400">I'll respond within 24 hours</p>
                 </div>
               </div>
@@ -63,8 +58,7 @@ function Contactpage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-1">Phone</h3>
-                  <p className="text-gray-300">+91 XXXXX XXXXX</p>
-                  <p className="text-sm text-gray-400">Available Mon-Fri, 9am-6pm</p>
+                  <p className="text-gray-300">+91-8413085139</p>
                 </div>
               </div>
               
@@ -74,8 +68,7 @@ function Contactpage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-1">Location</h3>
-                  <p className="text-gray-300">India</p>
-                  <p className="text-sm text-gray-400">Open to remote opportunities</p>
+                  <p className="text-gray-300">Noida,UP,India</p>
                 </div>
               </div>
             </div>
@@ -113,7 +106,7 @@ function Contactpage() {
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full bg-gray-800/50 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 transition-colors"
-                    placeholder="John Doe"
+                    placeholder="your name "
                   />
                 </div>
                 <div>
@@ -126,7 +119,7 @@ function Contactpage() {
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full bg-gray-800/50 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 transition-colors"
-                    placeholder="john@example.com"
+                    placeholder="yourmail@example.com"
                   />
                 </div>
               </div>

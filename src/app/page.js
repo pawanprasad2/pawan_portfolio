@@ -33,7 +33,7 @@ export default function Homepage() {
     <>
       <section
         id="home"
-        className="relative  flex justify-center items-center w-full min-h-screen bg-[#1b1f24] overflow-hidden"
+        className="relative   flex justify-center items-center w-full min-h-screen bg-[#1b1f24] overflow-hidden"
       >
         {/* Mobile Portrait Background */}
         <div
@@ -83,7 +83,7 @@ export default function Homepage() {
           "
         >
           <div className="rounded-lg  bg-[#131722]/90 backdrop-blur-sm text-white p-5 shadow-xl border border-gray-800/50 hover:bg-[#1a1f2e]/90 transition-all duration-300">
-            <h3 className="text-sm font-semibold text-blue-300">ABOUT ME</h3>
+            <h3 className="text-sm font-sans  text-blue-300">ABOUT ME</h3>
             <p className="mt-2 text-xs text-gray-300 leading-relaxed">
               Passionate full-stack developer with expertise in modern web technologies. 
               I create innovative solutions that bridge the gap between design and functionality.
@@ -130,30 +130,30 @@ export default function Homepage() {
             md:mr-50 md:mt-18 lg:mr-135 lg:mt-15 xl:mr-170 
           "
         >
-          <span className="text-4xl sm:text-5xl xl:mr-2 xl:ml-2 lg:ml-2 md:ml-2 md:text-5xl font-bold  text-white animate-fade-in">
+          <span className="text-4xl sm:text-5xl font-sans xl:mr-2 xl:ml-2 lg:ml-2 md:ml-2 md:text-5xl font-bold  text-white animate-fade-in">
             Hi{" "}
           </span>
           
           <div className="mt-6 xl:ml-3 lg:ml-3 md:ml-3 h-1 w-[80px] border border-yellow-500 sm:w-[19%] mx-auto md:mx-0 bg-gradient-to-r from-yellow-500 to-yellow-400 md:w-[80px] rounded-full" />
           
-          <div className="mt-8 mb-3  flex flex-wrap justify-center md:justify-start items-end">
+          <div className="mt-8 mb-3 font-sans  flex flex-wrap justify-center md:justify-start items-end">
             <h1 className="text-4xl xl:ml-2 lg:ml-2 md:ml-2 sm:text-5xl md:text-5xl lg:text-6xl font-bold text-white">
               I'm
             </h1>
-            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold text-blue-400 ml-2 bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text ">
+            <h1 className="text-4xl sm:text-5xl font-sans md:text-5xl lg:text-6xl font-bold text-blue-400 ml-2 bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text ">
               Pawan
             </h1>
-            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold text-white ml-2">
+            <h1 className="text-4xl sm:text-5xl font-sans md:text-5xl lg:text-6xl font-bold text-white ml-2">
               , a
             </h1>
           </div>
 
           <FlipWords
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  lg:w-[110%] font-bold dark:text-blue-400"
+            className="text-2xl sm:text-3xl font-sans md:text-4xl lg:text-5xl  lg:w-[110%] font-bold dark:text-blue-400"
             words={words}
           />
 
-          <p className="mt-6 xl:ml-2 lg:ml-2 md:ml-2 text-gray-400 font-semibold text-sm sm:text-base md:w-[75%] lg:w-[45vw] md:text-[12px] lg:text-[14px] leading-relaxed">
+          <p className="mt-6 xl:ml-2 lg:ml-2 font-sans md:ml-2 text-gray-400 font-semibold text-sm sm:text-base md:w-[75%] lg:w-[45vw] md:text-[12px] lg:text-[14px] leading-relaxed">
             Building beautiful, scalable, and user-friendly web applications
             with responsive front-end designs and efficient back-end systems.
             Passionate about creating digital experiences that make a

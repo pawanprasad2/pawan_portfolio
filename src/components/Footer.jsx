@@ -42,15 +42,15 @@ function Footer() {
             <div className="space-y-3">
               <div className="flex items-center text-gray-400">
                 <Mail size={16} className="mr-2 flex-shrink-0" />
-                <span className="text-sm">pawan.prasad@email.com</span>
+                <span className="text-sm">pawanprasad2322@gmail.com</span>
               </div>
               <div className="flex items-center text-gray-400">
                 <Phone size={16} className="mr-2 flex-shrink-0" />
-                <span className="text-sm">+91 XXXXX XXXXX</span>
+                <span className="text-sm">+91-8413085139</span>
               </div>
               <div className="flex items-center text-gray-400">
                 <MapPin size={16} className="mr-2 flex-shrink-0" />
-                <span className="text-sm">India</span>
+                <span className="text-sm">Noida, up, India</span>
               </div>
             </div>
           </div>
@@ -100,13 +100,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        
-        {/* Additional Footer Note */}
-        <div className="mt-6 pt-6 border-t border-gray-800/50 text-center">
-          <p className="text-gray-500 text-sm">
-            Open to freelance projects • Remote work friendly • Always learning something new
-          </p>
-        </div>
+
         
       </div>
     </footer>

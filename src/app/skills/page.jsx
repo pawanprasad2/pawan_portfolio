@@ -43,7 +43,7 @@ function Skillspage() {
       <div className="max-w-7xl  mx-auto px-6 py-16">
         {/* Header */}
         <div className="mb-20">
-          <h1 className="text-8xl md:text-9xl font-black text-white mb-4 tracking-tight">
+          <h1 className="text-8xl font-sans md:text-9xl font-black text-white mb-4 tracking-tight">
             SKILLS
           </h1>
           <p className="text-gray-400 max-w-2xl ">

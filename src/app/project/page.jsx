@@ -29,11 +29,22 @@ function Projectpage() {
       id: 3,
       title: "Cynthia Ugwu - A Portfolio",
       description:
-        "A sleek, minimal, and modern portfolio website inspired by Cynthia Ugwu’s design style. Built with smooth animations, responsive layouts, and an interactive user experience to showcase creative work beautifully..",
+        "A sleek, minimal, and modern portfolio website inspired by Cynthia Ugwu’s design style. Built with smooth animations, responsive layouts, and an interactive user experience to showcase creative work beautifully.",
       stack: ["HTML", "Javascript", "CSS", "GSAP"],
       liveLink: "https://codeshare-live.com",
       githubLink: "https://github.com/pawanprasad2/Cynthia-Ugwu---website",
       src:"./image/cynthiaugwu.png"
+      
+    },
+        {
+      id: 4,
+      title: "NewsHub ",
+      description:
+        "NewsHub is a modern news web app that lets users explore the latest headlines and category-based articles in a clean, responsive interface. It offers fast search, smooth navigation, and an easy-to-read layout for an engaging news-browsing experience.",
+      stack: ["React", "TailwindCSS"],
+      liveLink: "https://codeshare-live.com",
+      githubLink: "https://github.com/pawanprasad2/NewsHub",
+      src:"./image/newshub.png"
       
     },
   ];

@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 import { FaGithub, FaArrowRight, FaCode, FaEye } from "react-icons/fa";
 

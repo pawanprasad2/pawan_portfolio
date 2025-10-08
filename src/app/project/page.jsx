@@ -43,7 +43,7 @@ function Projectpage() {
       description:
         "NewsHub is a modern news web app that lets users explore the latest headlines and category-based articles in a clean, responsive interface. It offers fast search, smooth navigation, and an easy-to-read layout for an engaging news-browsing experience.",
       stack: ["React", "TailwindCSS"],
-      liveLink: "https://codeshare-live.com",
+      liveLink: "https://news-hub-jet-five.vercel.app/",
       githubLink: "https://github.com/pawanprasad2/NewsHub",
       src:"./image/newshub.png"
       

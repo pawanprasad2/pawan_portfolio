@@ -8,9 +8,10 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: dist
+    baseDirectory: out  # Static export goes to 'out' folder
     files:
       - '**/*'
   cache:
     paths:
+      - .next/cache/**/*
       - node_modules/**/*

@@ -12,7 +12,7 @@ function Projectpage() {
       description:
         "Chatty is a modern messaging app for real-time one-on-one conversations. Share text, images, and media instantly with a clean, lightweight, and secure experience.",
       stack: ["React","Tailwind css","Redux","DaisyUI", "Node.js","Express.js", "MongoDB", "Socket.io"],
-      liveLink: "https://taskflow-demo.vercel.app",
+      liveLink: "https://chat-app-mern-stack-chi.vercel.app/signup",
       githubLink: "https://github.com/pawanprasad2/chat-app-mern-stack-",
       src:"./image/chatty.png"
     },
@@ -22,7 +22,7 @@ function Projectpage() {
       description:
         "A simple and secure file uploader app to upload, delete, and download your files with ease. Clean design, fast performance, and complete control over your data.",
       stack: ["Nodejs", "EJS", "Express.js", "MongoDb","AWS","jwt"],
-      liveLink: "https://weatherlens.app",
+      liveLink: "https://secure-file-uploader-ctrj.onrender.com/user/register",
       githubLink: "https://github.com/pawanprasad2/secure-file-uploader",
       src:"./image/fileUploader.png"
     },
@@ -32,7 +32,7 @@ function Projectpage() {
       description:
         "A sleek, minimal, and modern portfolio website inspired by Cynthia Ugwu’s design style. Built with smooth animations, responsive layouts, and an interactive user experience to showcase creative work beautifully.",
       stack: ["HTML", "Javascript", "CSS", "GSAP"],
-      liveLink: "https://codeshare-live.com",
+      liveLink: "https://cynthia-ugwu-website.onrender.com/",
       githubLink: "https://github.com/pawanprasad2/Cynthia-Ugwu---website",
       src:"./image/cynthiaugwu.png"
       
@@ -43,7 +43,7 @@ function Projectpage() {
       description:
         "NewsHub is a modern news web app that lets users explore the latest headlines and category-based articles in a clean, responsive interface. It offers fast search, smooth navigation, and an easy-to-read layout for an engaging news-browsing experience.",
       stack: ["React", "TailwindCSS"],
-      liveLink: "https://news-hub-jet-five.vercel.app/",
+      liveLink: "https://news-hub-flax.vercel.app/",
       githubLink: "https://github.com/pawanprasad2/NewsHub",
       src:"./image/newshub.png"
       

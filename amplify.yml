@@ -8,7 +8,7 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: out  # Static export goes to 'out' folder
+    baseDirectory: out
     files:
       - '**/*'
   cache:

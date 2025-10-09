@@ -3,16 +3,13 @@ frontend:
   phases:
     preBuild:
       commands:
-        # Use Node version 18 (change if your project uses a different version)
         - nvm install 18
         - nvm use 18
         - npm ci
     build:
       commands:
-        # Build Next.js in standalone mode
         - npm run build
   artifacts:
-    # Amplify needs to know where the built files are
     baseDirectory: .next
     files:
       - '**/*'

@@ -1,6 +1,6 @@
 // src/app/layout.js
 import "@/styles/globals.css";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar";
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({

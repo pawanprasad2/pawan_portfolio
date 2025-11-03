@@ -51,18 +51,17 @@ export async function POST(req) {
       </div>
     `;
 
-    // 1️⃣ Send to YOU (owner’s Gmail)
+   
     await resend.emails.send({
-      from: `Portfolio Contact <${process.env.EMAIL_USER}>`, // must be verified domain
-      to: process.env.OWNER_EMAIL, // your Gmail inbox
+      from: `Portfolio Contact <${process.env.EMAIL_USER}>`,
+      to: process.env.OWNER_EMAIL,
       subject: `New message from ${name} — ${subject}`,
       html: htmlToOwner,
     });
 
-    // 2️⃣ Send confirmation email to the visitor
     await resend.emails.send({
-      from: `Pawan <${process.env.EMAIL_USER}>`, // from your verified domain
-      to: email, // user who filled the form
+      from: `Pawan <${process.env.EMAIL_USER}>`,
+      to: email, 
       subject: "Thanks for contacting me!",
       html: htmlToSender,
     });

@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-const resend = new Resend("re_ZE9Qfd1T_EwsGwWCbbgTEQYWwABGSRg6d");
+const resend = new Resend("re_UqyDG5ni_AHYXBpBczpTqYUpVarDGs9uQ");
 
 export async function POST(req) {
   try {

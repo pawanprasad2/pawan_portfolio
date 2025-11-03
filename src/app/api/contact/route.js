@@ -13,7 +13,6 @@ export async function POST(req) {
       );
     }
 
-    // HTML for owner (you)
     const htmlToOwner = `
       <div style="font-family:'Segoe UI',sans-serif;background:#f7f8fa;padding:30px;">
         <div style="max-width:600px;margin:auto;background:#fff;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.05);">
@@ -32,15 +31,11 @@ export async function POST(req) {
               <strong>Message:</strong>
               <p style="margin-top:8px;color:#444;">${message}</p>
             </div>
-            <p style="margin-top:30px;color:#888;font-size:13px;">
-              This message was sent from your portfolio website’s contact form.
-            </p>
           </div>
         </div>
       </div>
     `;
 
-    // HTML auto-reply to sender
     const htmlToSender = `
       <div style="font-family:'Segoe UI',sans-serif;background:#f7f8fa;padding:30px;">
         <div style="max-width:600px;margin:auto;background:#fff;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.05);">
@@ -51,37 +46,29 @@ export async function POST(req) {
             <p style="font-size:16px;color:#333;">
               Thanks for reaching out! I’ve received your message and will get back to you soon.
             </p>
-            <div style="margin-top:20px;background:#f9f9f9;padding:15px;border-radius:8px;">
-              <strong>Your Message:</strong>
-              <p style="margin-top:8px;color:#444;">${message}</p>
-            </div>
-            <p style="margin-top:30px;color:#888;font-size:13px;">
-              This is an automated reply from <strong>Pawan Prasad</strong>.<br/>
-              Please do not reply directly to this email.
-            </p>
           </div>
         </div>
       </div>
     `;
 
-    // Send to YOU (owner)
+    // 1️⃣ Send to YOU (owner’s Gmail)
     await resend.emails.send({
-      from: `Portfolio Contact <${process.env.EMAIL_USER}>`,
-      to: process.env.EMAIL_USER,
+      from: `Portfolio Contact <${process.env.EMAIL_USER}>`, // must be verified domain
+      to: process.env.OWNER_EMAIL, // your Gmail inbox
       subject: `New message from ${name} — ${subject}`,
       html: htmlToOwner,
     });
 
-    // Auto-reply to sender
+    // 2️⃣ Send confirmation email to the visitor
     await resend.emails.send({
-      from: `Pawan Prasad <${process.env.EMAIL_USER}>`,
-      to: email,
+      from: `Pawan <${process.env.EMAIL_USER}>`, // from your verified domain
+      to: email, // user who filled the form
       subject: "Thanks for contacting me!",
       html: htmlToSender,
     });
 
     return new Response(
-      JSON.stringify({ success: true, message: "Email sent successfully!" }),
+      JSON.stringify({ success: true, message: "Emails sent successfully!" }),
       { status: 200 }
     );
   } catch (error) {

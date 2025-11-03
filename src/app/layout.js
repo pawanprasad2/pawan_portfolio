@@ -1,7 +1,8 @@
 // src/app/layout.js
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import Navbar from "@/components/Navbar";
 import { Roboto } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       {/* roboto.className will inject font into body */}
       <body className={roboto.className}>
         <Navbar />
+        
         {children}
       </body>
     </html>

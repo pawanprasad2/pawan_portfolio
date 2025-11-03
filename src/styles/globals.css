@@ -1,11 +1,52 @@
-/* src/styles/globals.css */
 @import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
 
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* optional fallback */
+:root {
+  --bg: white;
+  --fg: #edf1e8;
+}
+
 body {
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
+}
+
+#h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
 }

@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("re_ZE9Qfd1T_EwsGwWCbbgTEQYWwABGSRg6d");
 
 export async function POST(req) {
   try {
@@ -53,14 +53,14 @@ export async function POST(req) {
 
    
     await resend.emails.send({
-      from: `Portfolio Contact <${process.env.EMAIL_USER}>`,
-      to: process.env.OWNER_EMAIL,
+      from: `Portfolio Contact <contact@builtbypawan.info>`,
+      to:` prasadpawan2322@gmail.com`,
       subject: `New message from ${name} — ${subject}`,
       html: htmlToOwner,
     });
 
     await resend.emails.send({
-      from: `Pawan <${process.env.EMAIL_USER}>`,
+      from: `Pawan <contact@builtbypawan.info>`,
       to: email, 
       subject: "Thanks for contacting me!",
       html: htmlToSender,

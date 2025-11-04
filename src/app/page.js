@@ -152,13 +152,13 @@ export default function Homepage() {
   initial={{ scaleX: 0 }}
   animate={{ scaleX: 1 }}
   transition={{ duration: 1, ease: "easeOut" }}
-  className="origin-left mt-6 xl:ml-3 lg:ml-3 md:ml-3 h-1 w-[80px] sm:w-[19%] mx-auto md:mx-0 bg-gradient-to-r from-yellow-500 to-yellow-400 rounded-full"
+  className="origin-left mt-4 xl:ml-1 lg:ml-1 md:ml-1 h-1 w-[80px] sm:w-[19%] mx-auto md:mx-0 bg-gradient-to-r from-yellow-500 to-yellow-400 rounded-full"
 />
 
 
           <motion.div
             variants={fadeInUp}
-            className="mt-8 mb-3 font-sans flex flex-wrap justify-center md:justify-start items-end"
+            className="mt-6 mb-3 font-sans flex flex-wrap justify-center md:justify-start items-end"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">I'm</h1>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-400 ml-2 bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text">
@@ -186,7 +186,7 @@ export default function Homepage() {
           {/* Buttons + Icons */}
           <motion.div
             variants={staggerContainer}
-            className="social-links flex mt-10 ml-2 gap-5 items-center"
+            className="social-links flex mt-10  gap-5 items-center"
           >
             <motion.button
               variants={fadeInUp}

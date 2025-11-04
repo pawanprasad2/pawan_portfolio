@@ -2,7 +2,7 @@
 import "../styles/globals.css";
 import Navbar from "@/components/Navbar";
 import { Roboto } from "next/font/google";
-import { Toaster } from "react-hot-toast";
+
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -12,6 +12,9 @@ const roboto = Roboto({
 
 export const metadata = {
   title: "pawan-portfolio",
+    icons: {
+    icon:"/favicon/pawanimg.png"
+  },
 };
 
 export default function RootLayout({ children }) {

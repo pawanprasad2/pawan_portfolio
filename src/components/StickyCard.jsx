@@ -13,8 +13,8 @@ export default function StickyCard() {
     {
       id: 1,
       title: "Chatty",
-      desc: "Real-time chat app with messaging, media sharing, and live updates.",
-      stack: ["React", "Redux", "Tailwind", "Socket.io"],
+      desc: "A full-stack real-time chat application that enables seamless messaging, media sharing, and instant updates between users. Built with Socket.IO for live communication, Redux for state management, and a modern responsive UI using React and Tailwind CSS.",
+      stack: ["React", "Redux", "Tailwind", "Socket.io","Express","Mongodb"],
       img: "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=800&q=80",
       bg: "#242730",
       accent: "#00C2FF",
@@ -24,8 +24,8 @@ export default function StickyCard() {
     {
       id: 2,
       title: "File Uploader",
-      desc: "Secure uploader for managing your files easily on cloud storage.",
-      stack: ["Node.js", "Express", "AWS", "JWT"],
+      desc: "A secure cloud-based file management system that allows users to upload, store, and access their files safely. Built using Node.js, Express, AWS S3, and JWT authentication to ensure privacy and performance.",
+      stack: ["Node.js", "Express", "AWS","EJS", "JWT"],
       img: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=800&q=80",
       bg: "#20262E",
       accent: "#00E676",
@@ -35,8 +35,8 @@ export default function StickyCard() {
     {
       id: 3,
       title: "Cynthia Ugwu Portfolio",
-      desc: "Creative animated portfolio built using HTML, CSS, and GSAP.",
-      stack: ["HTML", "CSS", "GSAP"],
+      desc: "A visually rich, animation-focused portfolio website inspired by the designer Cynthia Ugwu. Created using pure HTML, CSS, and GSAP for advanced scroll-based animations and transitions",
+      stack: ["HTML", "CSS", "JavaScript", "GSAP"],
       img: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80",
       bg: "#1E1B2E",
       accent: "#BB86FC",
@@ -46,7 +46,7 @@ export default function StickyCard() {
     {
       id: 4,
       title: "NewsHub",
-      desc: "Modern news app with category-based articles and clean UI.",
+      desc: "A modern news application that curates articles from various categories such as technology, sports, and entertainment. Built using React and TailwindCSS with a clean, responsive UI.",
       stack: ["React", "TailwindCSS"],
       img: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80",
       bg: "#26211F",

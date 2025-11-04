@@ -54,7 +54,7 @@ export async function POST(req) {
    
     await resend.emails.send({
       from: `Portfolio Contact <contact@builtbypawan.info>`,
-      to:` prasadpawan2322@gmail.com`,
+      to:`prasadpawan2322@gmail.com`,
       subject: `New message from ${name} — ${subject}`,
       html: htmlToOwner,
     });

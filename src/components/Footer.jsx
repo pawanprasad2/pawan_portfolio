@@ -138,7 +138,7 @@ function Footer() {
             </div>
 
             {/* Copyright */}
-            <div className="flex items-center text-gray-400 text-sm">
+            <div className="flex  items-center text-gray-400 text-sm">
               <span>© {currentYear} Pawan Prasad. Made with</span>
               <Heart size={16} className="mx-1 text-red-500 animate-pulse" />
               <span>and lots of coffee ☕</span>

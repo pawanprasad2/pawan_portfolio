@@ -29,7 +29,7 @@ export default function StickyCard() {
       img: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=800&q=80",
       bg: "#20262E",
       accent: "#00E676",
-      live: "https://secure-file-uploader-ctrj.onrender.com/user/register",
+      live: "https://secure-file-uploader-38kw.onrender.com",
       github: "https://github.com/pawanprasad2/secure-file-uploader",
     },
     {

@@ -24,7 +24,7 @@ export default function Homepage() {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/pdf/Pawan_Prasad_cv_MERN_Stack.pdf";
+    link.href = "/pdf/pawan_prasad_cv.pdf";
     link.download = "Pawan_Prasad_cv.pdf";
     document.body.appendChild(link);
     link.click();

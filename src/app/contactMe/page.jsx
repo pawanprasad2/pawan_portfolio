@@ -62,7 +62,7 @@ function Contactpage() {
                 {
                   icon: <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-gray-300" />,
                   title: "Phone",
-                  info: "+91-8413085139",
+                  info: "+91-8794479172",
                 },
                 {
                   icon: <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-gray-300" />,

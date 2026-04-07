@@ -9,8 +9,11 @@ const roboto = Roboto({
   weight: ["400", "500", "700"], 
   display: "swap",
 });
+const baseUrl =
+ "https://www.builtbypawan.info"  || "http://localhost:3000";
 
 export const metadata = {
+  metadataBase: new URL(baseUrl),
   title: "Pawan Prasad | MERN Stack & Full Stack Developer Portfolio",
   description:
     "Hi, I'm Pawan Prasad — a passionate MERN Stack and Full Stack Developer specializing in building modern, scalable, and responsive web applications using MongoDB, Express, React, and Node.js. Explore my projects, skills, and experience in full-stack development.",

@@ -33,7 +33,11 @@ export default function Homepage() {
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
   };
 
   const fadeIn = {
@@ -106,7 +110,9 @@ export default function Homepage() {
             <button
               className="mt-4 text-xs font-semibold text-white hover:text-blue-400 transition-colors duration-200 group"
               onClick={() =>
-                document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
+                document
+                  .getElementById("about")
+                  ?.scrollIntoView({ behavior: "smooth" })
               }
             >
               LEARN MORE{" "}
@@ -125,7 +131,9 @@ export default function Homepage() {
             <button
               className="mt-4 text-xs font-semibold text-white hover:text-blue-400 transition-colors duration-200 group"
               onClick={() =>
-                document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
+                document
+                  .getElementById("projects")
+                  ?.scrollIntoView({ behavior: "smooth" })
               }
             >
               BROWSE PORTFOLIO{" "}
@@ -143,28 +151,34 @@ export default function Homepage() {
           animate="visible"
           className="relative mt-10 z-40 max-w-2xl px-6 py-12 md:px-7 lg:px-12 text-center md:text-left md:mr-50 md:mt-18 lg:mr-135 lg:mt-15 xl:mr-170"
         >
-          <motion.span variants={fadeInUp} className="text-4xl sm:text-5xl font-sans font-bold text-white">
+          <motion.span
+            variants={fadeInUp}
+            className="text-4xl sm:text-5xl font-sans font-bold text-white"
+          >
             Hi
           </motion.span>
 
           {/* 🟡 Animated Yellow Bar */}
-        <motion.div
-  initial={{ scaleX: 0 }}
-  animate={{ scaleX: 1 }}
-  transition={{ duration: 1, ease: "easeOut" }}
-  className="origin-left mt-4 xl:ml-1 lg:ml-1 md:ml-1 h-1 w-[80px] sm:w-[19%] mx-auto md:mx-0 bg-gradient-to-r from-yellow-500 to-yellow-400 rounded-full"
-/>
-
+          <motion.div
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="origin-left mt-4 xl:ml-1 lg:ml-1 md:ml-1 h-1 w-[80px] sm:w-[19%] mx-auto md:mx-0 bg-gradient-to-r from-yellow-500 to-yellow-400 rounded-full"
+          />
 
           <motion.div
             variants={fadeInUp}
             className="mt-6 mb-3 font-sans flex flex-wrap justify-center md:justify-start items-end"
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">I'm</h1>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">
+              I'm
+            </h1>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-400 ml-2 bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text">
               Pawan
             </h1>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white ml-2">, a</h1>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white ml-2">
+              , a
+            </h1>
           </motion.div>
 
           <motion.div variants={fadeInUp}>
@@ -180,7 +194,8 @@ export default function Homepage() {
           >
             Building beautiful, scalable, and user-friendly web applications
             with responsive front-end designs and efficient back-end systems.
-            Passionate about creating digital experiences that make a difference.
+            Passionate about creating digital experiences that make a
+            difference.
           </motion.p>
 
           {/* Buttons + Icons */}
@@ -191,13 +206,19 @@ export default function Homepage() {
             <motion.button
               variants={fadeInUp}
               onClick={handleDownloadCV}
-              className="relative flex items-center gap-2 px-5 py-3 text-white font-medium 
-               bg-blue-600/90 rounded-2xl border border-blue-400/40 backdrop-blur-sm
-               transition-all duration-300 hover:bg-blue-700 hover:scale-[1.06] 
-               hover:shadow-[0_0_20px_rgba(59,130,246,0.6)] active:scale-95"
+              className="relative flex items-center justify-center gap-2 
+    px-4 py-2 sm:px-5 sm:py-3 
+    text-sm sm:text-base 
+    w-full sm:w-auto
+    text-white font-medium
+    bg-blue-600/90 rounded-2xl border border-blue-400/40 backdrop-blur-sm
+    transition-all duration-300 
+    hover:bg-blue-700 hover:scale-[1.06] 
+    hover:shadow-[0_0_20px_rgba(59,130,246,0.6)] 
+    active:scale-95"
             >
-              Download CV
-              <IoMdCodeDownload size={22} />
+              <span className="whitespace-nowrap">Download CV</span>
+              <IoMdCodeDownload size={18} className="sm:size-[22px]" />
             </motion.button>
 
             <motion.a

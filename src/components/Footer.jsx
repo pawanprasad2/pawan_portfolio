@@ -87,7 +87,7 @@ function Footer() {
               </div>
               <div className="flex items-center">
                 <Phone size={16} className="mr-2 flex-shrink-0 text-yellow-400" />
-                <span className="text-sm">+91-8413085139</span>
+                <span className="text-sm">+91-8794479172</span>
               </div>
               <div className="flex items-center">
                 <MapPin size={16} className="mr-2 flex-shrink-0 text-yellow-400" />

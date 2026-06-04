@@ -10,7 +10,7 @@ const roboto = Roboto({
   display: "swap",
 });
 const baseUrl =
- "https://www.builtbypawan.info"  || "http://localhost:3000";
+ "https://www.builtbypawan.site"  || "http://localhost:3000";
 
 export const metadata = {
   metadataBase: new URL(baseUrl),
@@ -39,7 +39,7 @@ export const metadata = {
     title: "Pawan Prasad | MERN Stack & Full Stack Developer Portfolio",
     description:
       "Explore the portfolio of Pawan Prasad — a full stack software developer skilled in React, Node.js, Express, and MongoDB. Building clean, scalable, and high-performing web apps.",
-    url: "https://www.builtbypawan.info", // replace with your actual domain
+    url: "https://www.builtbypawan.site", // replace with your actual domain
     siteName: "Pawan Portfolio",
     images: [
       {
